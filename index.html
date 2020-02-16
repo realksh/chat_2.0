@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/22fb702bca.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -18,7 +19,7 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <span class="status-bar__batterty-level">100%</span>
+        <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
@@ -27,13 +28,13 @@
         <h1 class="header__title">Chats</h1>
       </div>
       <div class="header__header-column">
-        <span class="header_icon">
+        <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-        <span class="header_icon">
+        <span class="header__icon">
           <i class="fas fa-comment"></i>
         </span>
-        <span class="header_icon">
+        <span class="header__icon">
           <i class="fas fa-cog"></i>
         </span>
       </div>
@@ -42,17 +43,21 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html" class="">
-            <div class="chat_column">
-              <div class="chat_column">
-                <img src="images/yj.png" alt="" class="chat__avatar g-avatar" />
-                <div class="chat__content">
-                  <span class="chat__username">여지니공주</span>
-                  <span class="chat__preview">Going home</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/yj.png"
+                  alt=""
+                  class="m-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">여지니공주</span>
+                  <span class="friend__bottom-text">후후후</span>
                 </div>
               </div>
-            </div>
-            <div class="chat_column">
-              <span class="chat_timestamp">Yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestamp">Yesterday</span>
+              </div>
             </div>
           </a>
         </li>
@@ -67,6 +72,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">7</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
